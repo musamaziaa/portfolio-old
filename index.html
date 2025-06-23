@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Usama Zia</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" tyzes="href=" /favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Aladin&family=Itim&family=Pacifico&family=Patrick+Hand&family=Poppins:wght@600&family=Sriracha&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://kit.fontawesome.com/941075c041.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+
+
+<body class="main-body">
+
+
+
+
+
+
+
+
+  <div class="top-container">
+
+    <header class="animate__animated animate__fadeIn animate__slower animate__delay-2s">
+      <img class="logoo" src="favicon.ico" alt="logo">
+      <button class="hamburger" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#profile">About</a></li>
+          <li><a href="https://musamaziaa.github.io/portfolio/">Portfolio</a></li>
+          <li><a href="#contactform">Contact</a></li>
+        </ul>
+      </nav>
+
+
+    </header>
+    <img class="top-cloud animate__animated animate__fadeInRightBig animate__slower" src="cloud.png" alt="cloud">
+    <div class="title-text">
+      <h1 class="animate__animated animate__fadeIn animate__slower animate__delay-2s">I'm Usama.</h1>
+      <h2 class="infomore animate__animated animate__fadeIn animate__slower animate__delay-3s">a <span
+          class="pro">Programmer</span></h2>
+    </div>
+    <img class="bottom-cloud animate__animated animate__fadeInLeftBig animate__slower" src="cloud.png" alt="cloud">
+    <img class="mountain animate__animated animate__fadeIn animate__slower animate__delay-1s" src="mountain.png"
+      alt="mountain-img">
+
+  </div>
+
+  <div class="middle-container">
+    <div class="profile reveal" id="profile">
+      <img src="icon.png" alt="angela-profile-img">
+      <h2>Hello</h2>
+      <p class="intro" id="intro">I am Usama Zia, a web developer. Who is filled with creativity and passion.</p>
+    </div>
+    <hr>
+    <div class="skills">
+      <h2 class="reveal">My Skills</h2>
+      <div class="skill-row reveal">
+        <img class="code-img" src="icon2.png" alt="code-img">
+
+        <h3>Design & Development</h3>
+        <p>I actually dove into coding when I was a 9-year-old because I wanted to make my own websites. Over time, I
+          have gained a wealth of experience designing and developing apps and websites.</p>
+
+      </div>
+
+      <div class="skill-row reveal">
+        <img class="chilli-img" src="icon3.png" alt="chillies-img">
+
+        <h3>Puzzles</h3>
+        <p>One of my best skills is that I can solve puzzles. I can solve many puzzles with ease! I can solve the
+          rubik's cube too, It's easy. I have solved 15 puzzles till now and they are sitting on my shelf completed.</p>
+
+      </div>
+    </div>
+    <hr>
+
+    <br>
+    <div class="contact-me reveal" id="contactform">
+      <h2>Get In Touch</h2>
+      <h3>If you love puzzles as much as I do.</h3>
+      <p class="contact-message">Love puzzles as much as I do? Let's talk about how awesome they are! We can talk about
+        them while we code!</p>
+      <a class="btn" href="contact.html">Contact Me</a>
+    </div>
+  </div>
+
+
+  <div class="bottom-container">
+    <a class="footer-link" href="https://www.youtube.com/@Core0fCraft4">Youtube</a>
+    <a class="footer-link" href="https://www.twitch.tv/camman18">Twitch</a>
+    <a class="footer-link"
+      href="file:///home/usama/Documents/Code_Files/Home%20Page%20Idea/Idea1/index.html">Website</a>
+    <p class="copyright">© 2023 Usama Zia | All rights reserved</p>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Hamburger menu functionality
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', function () {
+      navLinks.classList.toggle('nav-active');
+      hamburger.classList.toggle('active');
+      const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', !expanded);
+    });
+  </script>
+</body>
+
+</html>
